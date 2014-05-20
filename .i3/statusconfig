@@ -1,0 +1,59 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 2
+        color_good = "#859900"
+        color_degraded = "#b58900"
+        color_bad = "#dc322f"
+        color_separator = "#586e75"
+}
+
+# order += "ipv6"
+# order += "disk /"
+# order += "run_watch DHCP"
+# order += "run_watch VPN"
+order += "wireless wlp1s0"
+order += "volume master"
+order += "cpu_temperature 0"
+order += "battery 0"
+order += "battery 1"
+# order += "load"
+order += "time"
+
+wireless wlp1s0 {
+        format_up = "%essid: %quality"
+        format_down = "wifi down"
+}
+
+battery 0 {
+        integer_battery_capacity = true
+        low_threshold = 10
+        threshold_type = percentage
+        format = "Internal: %percentage"
+}
+
+battery 1 {
+        integer_battery_capacity = true
+        format = "External: %percentage"
+}
+
+cpu_temperature 0 {
+}
+
+time {
+        format = "%Y-%m-%d %H:%M"
+}
+
+volume master {
+       format = "Vol: %volume"
+       mixer = "Master"
+       mixer_idx = 0
+}
