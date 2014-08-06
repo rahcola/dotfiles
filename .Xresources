@@ -9,7 +9,6 @@ XTerm.termName: xterm-256color
 XTerm*locale: true
 XTerm*faceName: Source Code Pro
 XTerm*faceSize: 10
-!XTerm*font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso10646-1
 XTerm*metaSendsEscape: true
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 XTerm*ttyModes: erase ^?
@@ -18,10 +17,7 @@ XTerm*ttyModes: erase ^?
           <Key>BackSpace: string(0x7f) \n\
           <Key>Delete: string(0x1b) string("[3~")
 
-!x11-ssh-askpass*Dialog.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso10646-1
 x11-ssh-askpass*Dialog.title: Authenticate
 x11-ssh-askpass*shadowThickness: 0
 x11-ssh-askpass*borderWidth: 0
-
-!x11-ssh-askpass*Button.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso10646-1
 x11-ssh-askpass*Button.borderWidth: 1
