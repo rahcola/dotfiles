@@ -19,4 +19,4 @@ W="\[\033[0;37m\]"	# white
 
 NONE="\[\033[0m\]"
 
-PS1="${C}\u${NONE}@${C}\h${NONE}:\w\n> "
+PS1="${G}\u${NONE}@${G}\h${NONE}:\w\n> "
