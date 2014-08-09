@@ -19,4 +19,8 @@ W="\[\033[0;37m\]"	# white
 
 NONE="\[\033[0m\]"
 
-PS1="${G}\u${NONE}@${G}\h${NONE}:\w\n> "
+function git_branch() {
+    git branch --no-color 2> /dev/null | grep "^\*" | cut -d ' ' -f 2
+}
+
+PS1="${G}\u${NONE}@${G}\h${NONE}:\w ${B}\$(git_branch)${NONE}\n> "
