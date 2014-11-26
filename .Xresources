@@ -1,4 +1,4 @@
-#include "base16-default.dark.256.xresources"
+#include "tomorrow.night.xresources"
 
 Xft.autohint: 0
 Xft.lcdfilter: lcdlight
@@ -23,9 +23,3 @@ x11-ssh-askpass*Dialog.title: Authenticate
 x11-ssh-askpass*shadowThickness: 0
 x11-ssh-askpass*borderWidth: 0
 x11-ssh-askpass*Button.borderWidth: 1
-
-x11-ssh-askpass*background: base00
-x11-ssh-askpass*foreground: base05
-x11-ssh-askpass*Button.background: base00
-x11-ssh-askpass*Button.foreground: base05
-x11-ssh-askpass*Button.borderColor: base05
