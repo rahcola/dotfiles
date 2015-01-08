@@ -20,6 +20,7 @@ general {
 # order += "disk /"
 # order += "run_watch DHCP"
 # order += "run_watch VPN"
+order += "ethernet enp0s25"
 order += "wireless wlo1"
 order += "volume master"
 order += "cpu_temperature 0"
@@ -31,6 +32,11 @@ order += "time"
 wireless wlo1 {
         format_up = "%essid: %quality"
         format_down = "wifi down"
+}
+
+ethernet enp0s25 {
+         format_up = "%ip"
+         format_down = "eth down"
 }
 
 battery 0 {

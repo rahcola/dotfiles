@@ -153,7 +153,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
        status_command i3status --config ~/.i3/statusconfig
-       font pango:Source Sans Pro 9
+       font pango:Source Sans Pro 10
        colors {
               background "#1c1c1c"
               statusline "#839496"
