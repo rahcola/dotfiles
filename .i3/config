@@ -9,6 +9,10 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+client.focused #cc6666 #cc6666 #373b41 #f0c674
+client.focused_inactive #ffffff #ffffff #373b41 #f0c674
+client.unfocused #ffffff #ffffff #373b41 #f0c674
+
 # border style
 new_window pixel 2
 
@@ -152,13 +156,13 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-       status_command i3status --config ~/.i3/statusconfig
-       font pango:Source Sans Pro 9
+       status_command i3status -c ~/.i3/.i3status.conf
+       font pango:Source Sans Pro 11
        colors {
-              background "#1c1c1c"
-              statusline "#839496"
-              focused_workspace "#073642" "#073642" "#93a1a1"
-              inactive_workspace "#1c1c1c" "#1c1c1c" "#839496"
+              background "#c5c8c6"
+              statusline "#373b41"
+              focused_workspace "#8abeb7" "#8abeb7" "#ffffff"
+              inactive_workspace "#c5c8c6" "#c5c8c6" "#373b41"
        }
 }
 
