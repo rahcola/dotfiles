@@ -11,6 +11,7 @@ XTerm.termName: xterm-256color
 XTerm*locale: true
 XTerm*faceName: Source Code Pro
 XTerm*faceSize: 10
+XTerm*borderWidth: 0
 XTerm*metaSendsEscape: true
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 XTerm*ttyModes: erase ^?
