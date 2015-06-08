@@ -20,7 +20,7 @@
 
 *.foreground:   base02
 *.background:   base07
-*.cursorColor:  base02
+*.cursorColor:  base08
 
 *.color0:       base00
 *.color1:       base08
