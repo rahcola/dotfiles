@@ -166,11 +166,11 @@ bar {
        }
 }
 
-bindsym XF86AudioRaiseVolume --no-startup-id exec amixer -q set Master 10%+
-bindsym XF86AudioLowerVolume --no-startup-id exec amixer -q set Master 10%-
-bindsym XF86AudioMute --no-startup-id exec echo -n "set Master toggle\nset Speaker toggle" | amixer -sq
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 10%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 10%-
+bindsym XF86AudioMute exec --no-startup-id echo -n "set Master toggle\nset Speaker toggle" | amixer -sq
 
-bindsym XF86MonBrightnessUp --no-startup-id exec xbacklight -inc 5 -time 0
-bindsym XF86MonBrightnessDown --no-startup-id exec xbacklight -dec 5 -time 0
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 -time 0
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 -time 0
 
 exec --no-startup-id SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass; ssh-add
