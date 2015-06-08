@@ -1,4 +1,4 @@
-#include "tomorrow.night.xresources"
+#include "base16-tomorrow.light.256.xresources"
 
 Xft.autohint: 0
 Xft.lcdfilter: lcdlight
