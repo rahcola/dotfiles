@@ -11,7 +11,7 @@ general {
         colors = true
         interval = 2
         color_good = "#373b41"
-        color_degraded = "#f0c674"
+        color_degraded = "#b294bb"
         color_bad = "#cc6666"
         color_separator = "#373b41"
 }
@@ -20,7 +20,7 @@ general {
 # order += "disk /"
 # order += "run_watch DHCP"
 # order += "run_watch VPN"
-# order += "wireless wlp1s0"
+ order += "wireless wlp1s0"
 order += "volume master"
 order += "cpu_temperature 0"
 order += "battery 0"
