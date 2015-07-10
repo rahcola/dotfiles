@@ -23,4 +23,4 @@ function git_branch() {
     git branch --no-color 2> /dev/null | grep "^\*" | cut -d ' ' -f 2
 }
 
-PS1="${G}\u${NONE}@${G}\h${NONE}:\w ${B}\$(git_branch)${NONE}\n> "
+PS1="${B}\$(git_branch)${NONE}$ "
