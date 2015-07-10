@@ -9,12 +9,12 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-client.focused #cc6666 #cc6666 #373b41 #f0c674
-client.focused_inactive #ffffff #ffffff #373b41 #f0c674
-client.unfocused #ffffff #ffffff #373b41 #f0c674
+client.focused #dc322f #fdf6e3 #657b83 #dc322f
+client.focused_inactive #eee8d5 #eee8d5 #657b83 #dc322f
+client.unfocused #eee8d5 #eee8d5 #657b83 #f0c674
 
 # border style
-new_window pixel 2
+new_window normal
 
 # focus follows mouse
 focus_follows_mouse no
@@ -28,7 +28,7 @@ set $mod Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Source Sans Pro 7
+font pango:Source Sans Pro 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -157,12 +157,12 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
        status_command i3status -c ~/.i3/statusconfig
-       font pango:Source Sans Pro 11
+       font pango:Source Sans Pro 10
        colors {
-              background "#c5c8c6"
-              statusline "#373b41"
-              focused_workspace "#8abeb7" "#8abeb7" "#ffffff"
-              inactive_workspace "#c5c8c6" "#c5c8c6" "#373b41"
+              background "#002b36"
+              statusline "#839496"
+              focused_workspace "#002b36" "#073642" "#839496"
+              inactive_workspace "#002b36" "#002b36" "#586e75"
        }
 }
 

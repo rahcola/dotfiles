@@ -1,4 +1,4 @@
-#include "base16-tomorrow.light.256.xresources"
+#include "solarized.xresources"
 
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
