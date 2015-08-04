@@ -9,12 +9,12 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-client.focused #dc322f #fdf6e3 #657b83 #dc322f
+client.focused #dc322f #dc322f #657b83 #dc322f
 client.focused_inactive #eee8d5 #eee8d5 #657b83 #dc322f
 client.unfocused #eee8d5 #eee8d5 #657b83 #f0c674
 
 # border style
-new_window normal
+new_window pixel 1
 
 # focus follows mouse
 focus_follows_mouse no
