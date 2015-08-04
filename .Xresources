@@ -18,7 +18,11 @@ XTerm*ttyModes: erase ^?
 *VT100*translations: \
 #override Meta <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY) \n\
           <Key>BackSpace: string(0x7f) \n\
-          <Key>Delete: string(0x1b) string("[3~")
+          <Key>Delete: string(0x1b) string("[3~") \n\
+          Shift<Btn1Up>: select-end(CLIPBOARD, CUT_BUFFER1) \n\
+          Shift~Ctrl~Meta<Btn2Up>: insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+          ~Shift<Btn1Up>: select-end(PRIMARY, CUT_BUFFER0) \n\
+          ~Shift~Ctrl~Meta<Btn2Up>: insert-selection(PRIMARY, CUT_BUFFER0)
 
 x11-ssh-askpass*Dialog.title: Authenticate
 x11-ssh-askpass*shadowThickness: 0
