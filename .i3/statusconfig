@@ -10,25 +10,31 @@ general {
         output_format = "i3bar"
         colors = true
         interval = 2
-        color_good = "#859900"
-        color_degraded = "#cd4b16"
-        color_bad = "#dc322f"
-        color_separator = "#657b83"
+        color_good = "#b5bd68"
+        color_degraded = "#f0c674"
+        color_bad = "#cc6666"
+        color_separator = "#c5c8c6"
 }
 
 # order += "ipv6"
 # order += "disk /"
 # order += "run_watch DHCP"
 # order += "run_watch VPN"
- order += "wireless wlp1s0"
+order += "ethernet enp0s25"
+order += "wireless wlo1"
 order += "volume master"
 order += "cpu_temperature 0"
 order += "battery 0"
-order += "battery 1"
+#order += "battery 1"
 # order += "load"
 order += "time"
 
-wireless wlp1s0 {
+ethernet enp0s25 {
+        format_up = "%ip"
+        format_down = "ethernet down"
+}
+
+wireless wlo1 {
         format_up = "%essid: %quality"
         format_down = "wifi down"
 }
