@@ -1,20 +1,22 @@
-#include "solarized.xresources"
+#include "dotfiles/base16-zenburn.xresources"
 
+Xft.dpi: 109
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintmedium
+Xft.hintstyle: hintslight
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
-XTerm.termName: xterm-256color
-XTerm*locale: true
-XTerm*faceName: Source Code Pro
-XTerm*faceSize: 10
-XTerm*borderWidth: 0
-XTerm*metaSendsEscape: true
-XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-XTerm*ttyModes: erase ^?
+UXTerm.termName: xterm-256color
+UXTerm*saveLines: 20000
+UXTerm*locale: true
+UXTerm*faceName: Source Code Pro
+UXTerm*faceSize: 10
+UXTerm*borderWidth: 0
+UXTerm*metaSendsEscape: true
+UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+UXTerm*ttyModes: erase ^?
 *VT100*translations: \
 #override Meta <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY) \n\
           <Key>BackSpace: string(0x7f) \n\
