@@ -5,10 +5,24 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-[[ -f /usr/shar/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
+HISTCONTROL=ignoredups:erasedups
+HISTSIZE=10000
+HISTFILESIZE=$HISTSIZE
+shopt -s histappend
+
+[[ -f /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
+
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
 
 alias ls='ls --color=auto'
-alias e=${VISUAL}
+alias e="${VISUAL} -n"
+
+eval "$(dircolors ~/dotfiles/dircolors.ansi-light)"
 
 K="\[\033[0;30m\]"	# black
 R="\[\033[0;31m\]"	# red
